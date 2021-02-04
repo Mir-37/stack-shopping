@@ -91,8 +91,8 @@ p {
   height: auto;
 }
 .nav__brand-name {
-  font-family: var(--brand-font-family);
-  font-size: 1.2rem;
+  font-family: var(--text-font-family);
+  font-size: var(--font-size-brand);
   margin-left: 1rem;
 }
 .nav__menu {
@@ -131,5 +131,56 @@ p {
   border: none;
   outline: none;
   font-size: 1rem;
+  color: var(--font-color-secondary);
+}
+
+/* BEM Table */
+.table {
+  margin-top: 1rem;
+}
+
+.table__table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  text-align: left;
+}
+
+.table__thead {
+  color: var(--font-color-secondary);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table th {
+  padding: 1.5rem 2rem;
+  width: 25%;
+  max-width: 25%;
+}
+
+.icon-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.icon-button__icon {
+  width: 100%;
+  height: auto;
+}
+
+/* Utilites */
+
+.align-right {
+  text-align: right;
+}
+
+.table .custom-th {
+  padding-left: 11.5rem;
+}
+
+.text-secondary {
   color: var(--font-color-secondary);
 }
